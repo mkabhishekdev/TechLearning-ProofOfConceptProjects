@@ -1,0 +1,34 @@
+package codingbat;
+
+public class CountEnd {
+
+	public int countYZ(String str) {
+		 int count=0,count1=0,count2=0;
+		 String firstStr="",secondStr="";
+		 
+		 for(int i=0;i<str.length();i++){
+		   if(Character.isLetter(str.charAt(i))==false){
+		     firstStr=str.substring(i-1,i);
+		     secondStr = str.substring(str.length()-1,str.length());
+		     if((firstStr.equals("z")||firstStr.equals("y")) && (secondStr.equals("z")||secondStr.equals("y"))){
+		       count2++;
+		       count=count2;
+		     }
+		     else if((firstStr.equals("z")||firstStr.equals("y")) || (secondStr.equals("z")||secondStr.equals("y"))){ 
+		    	 count1++;
+		    	 count=count1;}
+		   }
+		 }
+		 if(count==0)count=0;
+		 return count; 
+		}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        CountEnd ce = new CountEnd();
+        int result=0;
+        result=ce.countYZ("fez day");
+        System.out.println(result);
+	}
+
+}

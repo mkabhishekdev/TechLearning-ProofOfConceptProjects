@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;wrestling_abstractInterface.Wrestler&apos; to &apos;WrestlerAbstract&apos;&#x0A;- Original project: &apos;Concepts&apos;&#x0A;- Original element: &apos;wrestling_abstractInterface.Wrestler&apos;&#x0A;- Renamed element: &apos;wrestling_abstractInterface.WrestlerAbstract&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Wrestler&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;wrestling_abstractInterface{Wrestler.java[Wrestler" matchStrategy="1" name="WrestlerAbstract" qualified="false" references="true" similarDeclarations="false" stamp="1558369060931" textual="false" version="1.0"/>
+</session>

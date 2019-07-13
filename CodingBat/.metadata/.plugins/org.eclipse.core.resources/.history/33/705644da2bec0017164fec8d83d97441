@@ -1,0 +1,17 @@
+package codingbat;
+
+public class StarOut {
+
+	public String starOut(String str) {
+		  String result="";
+		  
+		  return result;
+		}
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}
