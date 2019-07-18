@@ -69,13 +69,38 @@ public class SinglyLinkedListImpl {
 	      temp.next = jumpPoint;
 	}
 	
-	//search an element in a linked list
-	
-	
-	
+	//search an element in a linked list, check whether value x is present in the list
+	public boolean search(Node head,int x){
+		boolean res=false;
+		Node temp=head;
+		while(temp.next!=null && temp.data!=x){
+			temp=temp.next;
+		}
+		Node checkVal = temp;
+		if(checkVal.data==x)res=true;
+		else res=false;
+		return res;
+	}
 	
 	// reverse a linked list
-	
+	/*
+	 Remember Simple: Create 3 nodes - prev,curr,next. 
+	 Initially, prev,next will be null & curr points to head
+	 */
+	public Node reverse(Node nodeToReverse){
+		Node prev=null;
+		Node curr = nodeToReverse;
+		Node next=null;
+		
+		while(curr!=null){
+			next=curr.next;  //you need next variable to store next node value since current will point to previous in next step
+			curr.next=prev; //pointing to previous node
+			prev=curr; //update previous node to current node
+			curr=next; //current takes the value from the stored node "next"
+		}
+		head=prev; //update head to prev:which has the present head pointer
+		return nodeToReverse;
+	}
 	
 	
 	//print a linked list
@@ -97,6 +122,8 @@ public class SinglyLinkedListImpl {
           ll.insertAfter(ll.head.next, 8);
           System.out.println("Created Linked List:\n ");
         //  ll.deleteNode(7);
+        //  System.out.println(ll.search(ll.head,55));
+        // System.out.println(ll.reverse(ll.head));
           ll.printList();
 	}
 
