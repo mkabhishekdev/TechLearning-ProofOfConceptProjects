@@ -73,6 +73,21 @@ public class DoublyLinkedListImpl {
 	   new_node.next = given_node;
 	}
 	
+	void addNodeGeeks(Node head_ref, int pos, int data)
+	{
+	    Node new_node = new Node(data);
+		Node curr=head_ref;
+		int count=0;
+		while(curr!=null && count!=pos){
+		    curr=curr.next;
+		    count++;
+		}
+		Node temp=curr.next;
+	    curr.next = new_node;
+	    new_node.next=temp;
+	   
+	}
+	
     // This function prints contents of linked list starting from the given node 
     public void printlist(Node node) 
     { 
@@ -120,19 +135,20 @@ public class DoublyLinkedListImpl {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
          DoublyLinkedListImpl dll = new DoublyLinkedListImpl();
-         dll.append(6);
-         dll.push(5);
-         dll.push(4);
-         dll.push(3);
-         dll.push(2);
-         dll.push(1);
-         System.out.println("Original linked list "); 
+     //    dll.append(6);
+     //    dll.push(5);
+      //   dll.push(4);
+      //   dll.push(5);
+         dll.push(30);
+         dll.push(8);
+         System.out.println("Original linked list ");
+         dll.addNodeGeeks(dll.head,1,125);
          dll.printlist(dll.head); 
    
-         dll.reverse(); 
+    /*     dll.reverse(); 
          System.out.println(""); 
          System.out.println("The reversed Linked List is "); 
-         dll.printlist(dll.head); 
+         dll.printlist(dll.head); */
 	}
 
 }
