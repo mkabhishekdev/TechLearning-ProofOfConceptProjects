@@ -5,7 +5,9 @@ class Node{
 	Node left;
 	Node right;
 	Node(int x){
-		x=data;
+	    data=x;
+	    left=null;
+	    right=null;
 	}
 }
 
