@@ -1,7 +1,11 @@
 package trees;
 import java.util.*;
 /*ALGORITHM
- 
+ Level order involves using Queue structure
+ 1. Create a Queue, add the root initially to it.
+ 2. While checking whether queue is empty,be popping out the queue->save it to curr variable
+ 3. check whether curr->left exists, if yes add to queue. Similarly check for curr->right exists
+ 4. return the result
  */
 public class LevelOrder {
     Node root;
@@ -17,7 +21,7 @@ public class LevelOrder {
         while(!queue.isEmpty()) {
         	curr=queue.poll();
         	res.add(curr);
-        	if(curr.left!=null) {
+        	if(curr.left!=null) {  
         		queue.add(curr.left);
         	
         	}
