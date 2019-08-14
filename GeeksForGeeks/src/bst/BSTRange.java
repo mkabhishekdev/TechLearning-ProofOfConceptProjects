@@ -1,6 +1,17 @@
 package bst;
 import java.util.*;
 
+class Node{
+	int data;
+	Node left;
+	Node right;
+	Node(int x){
+		data=x;
+		left=null;
+		right=null;
+	}
+}
+
 public class BSTRange {
    
    Node root;
