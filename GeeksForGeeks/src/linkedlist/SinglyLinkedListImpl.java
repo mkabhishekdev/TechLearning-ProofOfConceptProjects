@@ -119,7 +119,7 @@ public class SinglyLinkedListImpl {
           ll.push(7);
           ll.push(1);
           ll.append(4);
-          ll.insertAfter(ll.head.next, 8);
+    //      ll.insertAfter(ll.head.next, 8);
           System.out.println("Created Linked List:\n ");
         //  ll.deleteNode(7);
         //  System.out.println(ll.search(ll.head,55));
