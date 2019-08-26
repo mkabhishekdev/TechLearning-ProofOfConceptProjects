@@ -1,13 +1,13 @@
 package practiceProblems;
 
-class Node{
+/*class Node{
    int data;
    Node next;
    Node(int x){
 	   data=x;
 	   next=null;
    }
-}
+}*/
 
 public class Problem6 {
 
