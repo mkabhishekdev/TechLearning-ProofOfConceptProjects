@@ -27,8 +27,9 @@ public class LevelOrderTraversal {
     			queue.add(curr.right);
     			storage.add(queue.poll());
     		}
-    		
+    		curr=queue.poll();
     	}
+    	return storage;
     }
     
 	public static void main(String[] args) {
@@ -39,6 +40,7 @@ public class LevelOrderTraversal {
         lot.root.right = new Node(3);
         lot.root.left.left = new Node(4);
         lot.root.left.right = new Node(5);
+        System.out.println(lot.LevelOrder(lot.root));
         
 	}
 
