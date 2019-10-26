@@ -18,8 +18,6 @@ public class QueueUsingArrayImpl {
 		  arr[i]=arr[i+1];
 	  }
 	  size=size-1;
-	//  arr[size]=arr[size-1];
-	//  arr = arr[size];
 	  return temp;
 	} 
 	
