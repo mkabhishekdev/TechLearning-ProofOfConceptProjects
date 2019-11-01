@@ -44,9 +44,38 @@ public class SingleLLReview {
     	while(curr.next!=null){
     		if(curr.data==data){
     			curr=curr.next;
+    			break;
     		}
     		curr=curr.next;
     	}
+    }
+    
+    //to search a element in LL
+    public boolean search(int data){
+    	Node curr=head;
+    	boolean res=false;
+    	while(curr.next!=null){
+    		if(curr.data==data){
+    			res=true;
+    			break;
+    		}
+    		curr=curr.next;
+    	}
+    	return res;
+    }
+    
+    //to print a LL
+    public void printMe(){
+    	Node curr=head;
+    	while(curr!=null){
+    		System.out.println("Elements in the linked list are: "+curr.data);
+    		curr=curr.next;
+    	}
+    }
+    
+    //reverse the LL
+    public Node reverseMe(Node input_node){
+    	
     }
     
 	public static void main(String[] args) {
