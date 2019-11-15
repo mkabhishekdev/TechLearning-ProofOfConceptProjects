@@ -12,39 +12,32 @@ class Node{
 public class SingleLLReview {
     Node head;
 
-    //insert in front of LL
+    // insert in LL
     public void push(int data){
-      Node new_node = new Node(data);
-      if(head==null){
-    	  head=new_node;
-    	  head.next=null;
-      }
-      else{
-    	  head.next=new_node;
-    	  new_node.next=null;
-      }
+        Node new_node = new Node(data);  
+    	if(head==null)
+    	{
+          head=new_node;
+          return;  // does the same job as break
+        }
+        new_node.next = null;
+        Node curr=head;
+        while(curr.next!=null){
+        	curr=curr.next;
+        }
+        curr.next = new_node;
     }
     
-    //insert at end of LL
-    public void append(int data){
-      	Node new_node=new Node(data);
-      	Node curr=head;
-      	
-      	while(curr.next!=null){
-      		curr=curr.next;
-      	}
-      	curr.next=new_node;
-      	new_node.next=null;
-    }
-    
+
     //to delete a node in LL -- continue from here, need to test the below
     public void delete(int data){
     	Node remove_node = new Node(data);
     	Node curr=head;
     	while(curr.next!=null){
-    		if(curr.data==data){
-    			curr=curr.next;
-    			break;
+    		if(curr.next.data==data){
+    			Node prev=curr;
+    			prev.next=curr.next;
+    			return;
     		}
     		curr=curr.next;
     	}
@@ -74,17 +67,20 @@ public class SingleLLReview {
     }
     
     //reverse the LL
-    public Node reverseMe(Node input_node){
+  /*  public Node reverseMe(Node input_node){
     	
-    }
+    } */
     
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
            SingleLLReview sr = new SingleLLReview();
-           sr.push(5);
-           sr.push(4);
-           sr.push(3);
+           sr.push(1);
            sr.push(2);
+           sr.push(3);
+           sr.push(4);
+           sr.printMe();
+           sr.delete(3);
+           sr.printMe();
            
 	}
 
