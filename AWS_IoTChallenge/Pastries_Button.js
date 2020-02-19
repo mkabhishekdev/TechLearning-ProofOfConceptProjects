@@ -13,7 +13,7 @@ const AWS = require('aws-sdk');
 const SNS = new AWS.SNS({ apiVersion: '2010-03-31' });
 
 // !!CHANGE THIS!! Enter the ARN of your SNS Topic
-const TOPIC_ARN = 'YOUR SNS TOPIC ARN GOES HERE';
+const TOPIC_ARN = 'arn:aws:sns:us-east-1:282052529943:DevTreats';
 
 exports.handler = (event, context, callback) => {
 
@@ -22,18 +22,18 @@ exports.handler = (event, context, callback) => {
     const doubleClick = 'We have a Birthday today! Pastries on the Usual place!!';
     const longClick = 'Come to the Plaza for a treat surprise now!!';
    
-var nomAlert = singleClick;   
+var devTeamAlert = singleClick;   
 
 if(event.clickType == "DOUBLE"){
-    nomAlert = doubleClick;
+    devTeamAlert = doubleClick;
 }
 
 if(event.clickType == "LONG"){
-    nomAlert = longClick;
+    devTeamAlert = longClick;
 }
     
  const params = {
-            Message: nomAlert,
+            Message: devTeamAlert,
             // !!CHANGE THIS!! Enter the subject of your email in the single quotation marks below
             Subject: `Treats!`,
             TopicArn: TOPIC_ARN,
