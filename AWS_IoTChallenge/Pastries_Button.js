@@ -20,7 +20,7 @@ exports.handler = (event, context, callback) => {
 // !!CHANGE THIS!! Your text to display goes in the single quotation marks below    
     const singleClick = 'We have a Birthday today! Donuts on the Usual place!!';  // Birthday mail, I know surprise lies in finding who's birthday
     const doubleClick = 'No special reason! Pastries on the Usual place!!';  // Generic email for pastries
-    const longClick = 'Immediately please assemble in the Plaza!!';  // In the case of any emergencies
+    const longClick = 'Immediately please assemble in the Plaza!!';  // In the case of any emergencies/to assemble everyone in a common place
    
 var devTeamAlert = singleClick;   
 
@@ -44,4 +44,4 @@ if(event.clickType == "LONG"){
 
 //email is: VST-Development@tylertech.com
 // create the dynamo db feature for data analysis
-
+//Device: G030PM034053VTT3
