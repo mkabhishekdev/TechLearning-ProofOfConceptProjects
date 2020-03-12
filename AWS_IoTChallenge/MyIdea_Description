@@ -8,7 +8,7 @@ GOAL:
     1. On Single click of the IoT button, send a Birthday mail( I know the surprise lies in figuring out who's birthday)
     2. On Double click, No reason generic email for pastries
     3. On long-click, in case of any emergencies/to assemble everyone in a common place.
-    4. Further, I am storing the message based on the type of click in a dynamo-db table -> probably may be for some kind of a data analysis.
+    4. Further, I am storing the message based on the type of click in a dynamo-db table -> probably may be for some kind of data analysis.
        For example: Let's say over a year of usage, we know what season of the year we have many birthdays & can we plan some fun event
        based on it?
        What season of the year did we encounter long clicks signifying an emergency/announcement so we could may be get an general idea for
