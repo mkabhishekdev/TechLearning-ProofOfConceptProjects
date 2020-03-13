@@ -16,7 +16,8 @@ GOAL:
        
 Technologies:
 So I Implemented the above using JS,
-1. Code : Pastries_Button.js - 
+1. Code : Pastries_Button.js 
+   Link:  https://github.com/coderkemp/TechLearning-ProofOfConceptProjects/blob/master/AWS_IoTChallenge/Pastries_Button.js
 
 2. Created a SNS topic, have added my email as of now but probable I think VST-Development@tylertech.com can be added later.
    SNS Topic in AWS: https://console.aws.amazon.com/sns/v3/home?region=us-east-1#/topic/arn:aws:sns:us-east-1:282052529943:DevTreats
