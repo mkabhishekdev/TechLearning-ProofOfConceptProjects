@@ -17,7 +17,16 @@ GOAL:
 Technologies:
 So I Implemented the above using JS,
 1. Code : Pastries_Button.js - 
+
 2. Created a SNS topic, have added my email as of now but probable I think VST-Development@tylertech.com can be added later.
+   SNS Topic in AWS: https://console.aws.amazon.com/sns/v3/home?region=us-east-1#/topic/arn:aws:sns:us-east-1:282052529943:DevTreats
+   
 3. Lambda function with the code from my Pastries_Button.js button.
+   Lambda function in AWS: https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/DevTreatsSubscriber?tab=configuration
+    - Have added the IoT trigger(Device: G030PM034053VTT3) in lambda but have not conducted testing with device.
+    
 4. Dynamo db table named 'DevTreatsTable' which stores the messages based on clicks.
+   DynamoDB table in AWS: https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=DevTreatsTable;tab=overview
+   
+   
    
