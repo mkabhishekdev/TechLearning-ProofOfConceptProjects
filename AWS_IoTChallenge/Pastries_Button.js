@@ -11,7 +11,7 @@
 const AWS = require('aws-sdk');
 const SNS = new AWS.SNS({ apiVersion: '2010-03-31' });
 
-const TOPIC_ARN = 'arn:aws:sns:us-east-1:282052529943:DevTreats';   //my SNS topic I created
+const TOPIC_ARN = 'Enter your SNS-topic';   //my SNS topic I created
 
 //creation of DynamoDB service object
 var ddb = new AWS.DynamoDB({apiVersion:'2010-03-31'});
@@ -60,5 +60,4 @@ ddb.putItem(storeInDb, function(err,devTeamAlert){
         SNS.publish(params, callback);
 };
 
-//email is: VST-Development@tylertech.com
-//Device: G030PM034053VTT3
+
