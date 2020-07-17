@@ -1,0 +1,13 @@
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\DependencyInjectionDemo.exe
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\DependencyInjectionDemo.deps.json
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\DependencyInjectionDemo.runtimeconfig.json
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\DependencyInjectionDemo.runtimeconfig.dev.json
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\DependencyInjectionDemo.dll
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\xunit.assert.dll
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\xunit.core.dll
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\obj\Debug\netcoreapp3.1\DependencyInjectionDemo.csprojAssemblyReference.cache
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\obj\Debug\netcoreapp3.1\DependencyInjectionDemo.AssemblyInfoInputs.cache
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\obj\Debug\netcoreapp3.1\DependencyInjectionDemo.AssemblyInfo.cs
+D:\DevResearch\CoderKemp_REPO\TechLearning-ProofOfConceptProjects\DI\DependencyInjectionDemo\DependencyInjectionDemo\obj\Debug\netcoreapp3.1\DependencyInjectionDemo.csproj.CopyComplete
