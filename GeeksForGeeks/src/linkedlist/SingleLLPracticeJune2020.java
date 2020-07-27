@@ -1,6 +1,6 @@
 package linkedlist;
 
-class Node
+/*class Node
 {
  int data;
  Node next;
@@ -9,7 +9,7 @@ class Node
 	 data = x;
      next = null;	 
  }
-}
+}*/
 
 public class SingleLLPracticeJune2020 {
 
@@ -37,13 +37,24 @@ public class SingleLLPracticeJune2020 {
 			curr = curr.next;
 		}
 	}
-	
-	//implement from here 
-	public int IndexSearhItem(Node searchNode)
+	 
+	public int IndexSearchItem(int searchItem)
 	{
-		return 0;
+		Node curr=head;
+		int i=0;
+		while(curr!=null){
+			if(curr.data == searchItem){
+				System.out.println("Item returned on search is: "+i);
+		      	return i;	
+			}
+			curr=curr.next;
+			i++;
+		}
+		System.out.println("Search item not found in the record present");
+		return -1;
 	}
 	
+	//code from here
 	public void ReverseLL()
 	{
 		
@@ -56,7 +67,8 @@ public class SingleLLPracticeJune2020 {
        sll.Push(3);
        sll.Push(4);
        sll.Push(5);
-       sll.PrintLL();
+      // sll.PrintLL();
+       sll.IndexSearchItem(8);
 	}
 
 }
