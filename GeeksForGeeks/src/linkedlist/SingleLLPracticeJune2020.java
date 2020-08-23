@@ -67,8 +67,8 @@ public class SingleLLPracticeJune2020 {
        sll.Push(3);
        sll.Push(4);
        sll.Push(5);
-      // sll.PrintLL();
-       sll.IndexSearchItem(8);
+       sll.PrintLL();
+      // sll.IndexSearchItem(8);
 	}
 
 }
