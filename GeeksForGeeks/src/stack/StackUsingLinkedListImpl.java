@@ -1,4 +1,4 @@
-package stack;
+  package stack;
 
 
 /* Implement stack using linked list data structure */
