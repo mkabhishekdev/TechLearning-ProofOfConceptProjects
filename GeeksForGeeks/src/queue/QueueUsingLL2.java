@@ -11,56 +11,49 @@ class Node
   }
 }
 
-//REWORK ON THIS PROBLEM
+
 public class QueueUsingLL2 {
 
-	Node head;
-	
-	public void Add(int element)
-	{
-	  Node newValue = new Node(element);
-	  if(head==null)
-	  {
-		  head=newValue;
-		  return;
-	  }
-	  Node curr=head;
-	  while(curr!=null)
-	  {
-		 curr = curr.next;
-	  }
-	  
-	}
-	
-	public int Peek()
-	{
-	   if(head.next==null)return head.data;
-	   Node curr=head;
-	   while(curr.next!=null){
-		   curr=curr.next;
-	   }
-	   return curr.data;
-	}
-	
-	public void PrintQueue()
-	{
-		Node curr=head;
-		while(curr.next!=null)
+	Node front, rear;
+	    
+	 
+	    // This function should add an item at
+	    // rear
+		void push(int a)
 		{
-			System.out.println("Element:"+curr.data);
-			curr=curr.next;
+			Node temp = new Node(a);
+	        if(front ==  null){
+	            front=rear=temp;
+	            return;
+	        }
+	        rear.next = temp;
+	        rear = temp;
 		}
-	}
+		
+	    // This function should remove front
+	    // item from queue and should return
+	    // the removed item.
+		int pop()
+		{
+	        if(front == null)return -1;
+	        int remItem = front.data;
+	        front = front.next;
+	        if(front == null){
+	            rear = null;
+	        }
+	        return remItem; 
+	        
+		}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
        QueueUsingLL2 qll2 = new QueueUsingLL2();
-       qll2.Add(1);
-       qll2.Add(2);
-       qll2.Add(3);
-       qll2.Add(4);
-       qll2.PrintQueue();
-     //  qll2.Peek();
+       qll2.push(1);
+       qll2.push(2);
+       qll2.push(3);
+       qll2.push(4);
+
+ qll2.pop();
 	}
 
 }
