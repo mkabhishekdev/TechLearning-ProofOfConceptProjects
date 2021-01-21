@@ -1,3 +1,6 @@
+//Marshalling Concept: Convert GoLang struct data into ByteData(json)
+//Un-Marshalling Concept: Convert JSON(ByteData) into Struct object
+
 package main
 
 import (
