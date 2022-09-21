@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "cgpcbslmdnpKok43Q+yCO4OVlpanJuadOUV9T9One6s=",
+  "Source": "RazorLibrary",
+  "BasePath": "_content/RazorLibrary",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RazorLibrary\\wwwroot",
+      "Source": "RazorLibrary",
+      "ContentRoot": "C:\\Research\\TechLearning-ProofOfConceptProjects\\.NetHandsOn\\.NET_MAUIBlazor(Multi Application User Interface)\\BlazorMauiApp\\RazorLibrary\\wwwroot\\",
+      "BasePath": "_content/RazorLibrary",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
